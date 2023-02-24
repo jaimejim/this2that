@@ -49,3 +49,9 @@ In many cases the generated output is correct but in others it is not and there 
 Prompt engineering seems not to improve the results, other than the usual data cleaning to prevent other GPT output being generated. The `temperature` is set to the minimum to force a more deterministic outcome.
 
 You can see the generated outputs in `/output` folder.
+
+Note: A previous version showed minor differences due to lack of newline trimming, that is now solved.
+
+```
+❯ diff output/output.yaml input.yaml
+```

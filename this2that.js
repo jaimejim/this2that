@@ -75,7 +75,7 @@ async function translateInput(inputText) {
     cost += (response.data.usage.total_tokens / 1000) * 0.02
     logger.debug(response.data.choices[0].text);
     logger.info('accumulated cost: ' + Math.round(cost * 1000) / 1000 + ' euros')
-    const trimmedText = response.data.choices[0].text.replace(/^\s+/, '');
+    const trimmedText = response.data.choices[0].text.replace(/^\s+|\s+$/g, '');
     return trimmedText;
   }
   async function main () {

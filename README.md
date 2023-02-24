@@ -44,7 +44,7 @@ This will translate the input file `input.json` into `output.xml`.
 
 The summary as of 24th of February 2022 is that the results are mixed.
 
-In many cases the generated output is correct but in others it is not and there is no way to be 100% certain (other than testing with an actual translation library). OpenAI consistently generates valid and correct XML/JSON/YAML that matches that of the ones I verified and expect (`input.xml`, `input.json`, `input.yaml`). However it sometimes generates invalid CBOR data.
+In many cases the generated output is correct but in others it is not and there is no way to be -a priori- 100% certain (other than testing with an actual translation library). OpenAI consistently generates valid and correct XML/JSON/YAML that matches that of the ones I verified and expect (`input.xml`, `input.json`, `input.yaml`). However it sometimes generates invalid CBOR data.
 
 Prompt engineering seems not to improve the results, other than the usual data cleaning to prevent other GPT output being generated. The `temperature` is set to the minimum to force a more deterministic outcome.
 

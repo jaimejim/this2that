@@ -1,0 +1,11 @@
+sensor:
+  name: Temperature Sensor
+  location: Room A
+  type: analog
+  range:
+    min: -40
+    max: 80
+data:
+  value: 25.5
+  unit: °C
+  timestamp: '2023-02-24T12:34:56.789Z'

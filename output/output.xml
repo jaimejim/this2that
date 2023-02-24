@@ -1,0 +1,14 @@
+<sensor>
+  <name>Temperature Sensor</name>
+  <location>Room A</location>
+  <type>analog</type>
+  <range>
+    <min>-40</min>
+    <max>80</max>
+  </range>
+</sensor>
+<data>
+  <value>25.5</value>
+  <unit>°C</unit>
+  <timestamp>2023-02-24T12:34:56.789Z</timestamp>
+</data>
